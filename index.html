@@ -7,7 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>It is my website</h1>
+
+    <section id="first_title">
+        <h1>It is firstTitle</h1>
+        <p>I love Programming</p>
+    </section>
+
+   
 
     <select name="" id="" onchange="changetextcolor(this) ">
         <option value="black">black</option>
@@ -17,10 +23,29 @@
         <option value="tomato">tomato</option>
     </select>
 
+    <section id="second_title">
+        <h1>It is secondTitle</h1>
+        <p>I love Programming</p>
+    </section>
+
+    <select name="" id="" onchange="changetextcolorsecond(this) ">
+        <option value="black">black</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+        <option value="tomato">tomato</option>
+    </select>
+
 
     <script>
+        var firstTitle = document.getElementById('first_title')
         function changetextcolor(e){
-            document.body.style.color = e.value;
+            firstTitle.style.color = e.value;
+        }
+
+        var secondTitle = document.getElementById('second_title')
+        function changetextcolorsecond(e){
+            secondTitle.style.color = e.value;
         }
     </script>
 </body>
